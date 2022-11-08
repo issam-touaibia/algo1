@@ -1,0 +1,21 @@
+ALGORITHM issam
+VAR 
+    str=STRING
+    i= INTEGER:=0
+    lp=INTEGER:=0
+    lm=INTEGER:=0
+    vl=INTEGER:=0
+BEGIN
+    WHILE (str[i]<>"." ) DO 
+        FOR i FROM 0 TO str.length-1 STEP 1  DO
+            if (str[i]= " ") then
+               lm = lm +1
+            end_if  
+            if (str[i]= [a,o,u,y,i,e]) then
+               vl = vl +1
+               lp =lp +1
+               
+            else lp =lp+1  
+        END_FOR
+    END_WHILE
+END
